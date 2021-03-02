@@ -103,16 +103,14 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", position='" + position + '\'' +
-                ", address='" + address + '\'' +
-                ", dateOfBirthday=" + dateOfBirthday +
-                ", dateOfHiring=" + dateOfHiring +
-                ", department='" + department + '\'' +
-                '}';
+        return  "id = " + id + " | " +
+                "name = " + name + " | " +
+                "surname = " + surname + " | " +
+                "position = " + position + " | " +
+                "address = " + address + " | " +
+                "dateOfBirthday = " + dateOfBirthday + " | " +
+                "dateOfHiring = " + dateOfHiring + " | " +
+                "department = " + department + "\n";
     }
 }
 
