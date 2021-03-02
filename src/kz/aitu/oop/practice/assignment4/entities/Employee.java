@@ -2,7 +2,7 @@ package kz.aitu.oop.practice.assignment4.entities;
 
 import java.time.LocalDate;
 
-public class Employee {
+public class Employee { //just entities
     private int id;
     private String name;
     private String surname;

@@ -11,12 +11,12 @@ import kz.aitu.oop.practice.assignment4.repositories.interfaces.IPositionReposit
 
 public class Main {
     public static void main(String[] args) {
-        IDBManager dbManager = new DBManager();
+        IDBManager dbManager = new DBManager(); //creating obj
         IEmployeeRepositories employeeRepositories = new EmployeeRepositories(dbManager);
         EmployeeController employeeController = new EmployeeController(employeeRepositories);
         IPositionRepositories positionRepositories = new PositionRepositories(dbManager);
         PositionController positionController = new PositionController(positionRepositories);
         MyApplication myApplication = new MyApplication(employeeController, positionController);
-        myApplication.start();
+        myApplication.start(); //start function in MyApplication class
     }
 }

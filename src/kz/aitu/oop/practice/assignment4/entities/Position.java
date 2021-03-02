@@ -1,6 +1,6 @@
 package kz.aitu.oop.practice.assignment4.entities;
 
-public class Position {
+public class Position {  //just entities
     private String name;
     private int salary;
 
@@ -30,9 +30,7 @@ public class Position {
 
     @Override
     public String toString() {
-        return "Position{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                '}';
+        return "name = " + name + " | " +
+                "salary = " + salary + "\n";
     }
 }

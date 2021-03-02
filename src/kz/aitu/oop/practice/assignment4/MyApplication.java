@@ -20,7 +20,7 @@ public class MyApplication {
         scanner = new Scanner(System.in);
     }
 
-    public void start() {
+    public void start() {      //text of option
         while (true) {
             System.out.println("""
                             Choose one option:
@@ -38,7 +38,7 @@ public class MyApplication {
                     );
             int choice = scanner.nextInt();
 
-            if (choice == 1) {
+            if (choice == 1) {        //call all methods from menu
                 showAllEmployeeMenu();
             }
             else if (choice == 2) {
@@ -70,6 +70,8 @@ public class MyApplication {
             System.out.println("----------------------------------------------------------------");
         }
     }
+
+    //menu which call all methods
 
     public void showAllEmployeeMenu() {
         System.out.println(employeeController.showAll());

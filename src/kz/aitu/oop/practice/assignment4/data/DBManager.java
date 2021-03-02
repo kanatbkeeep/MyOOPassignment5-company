@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DBManager implements IDBManager {
-    public Connection getConnection() {
+    public Connection getConnection() {    //connect to db
         try {
             Class.forName("org.postgresql.Driver");
 

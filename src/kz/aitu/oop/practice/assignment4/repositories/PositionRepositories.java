@@ -19,7 +19,7 @@ public class PositionRepositories implements IPositionRepositories {
     }
 
     @Override
-    public ArrayList<Position> showAllPosition() {
+    public ArrayList<Position> showAllPosition() {  //show position table from db
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
@@ -44,7 +44,7 @@ public class PositionRepositories implements IPositionRepositories {
     }
 
     @Override
-    public boolean addNewPosition(Position position) {
+    public boolean addNewPosition(Position position) {    //add position to db
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
@@ -63,7 +63,7 @@ public class PositionRepositories implements IPositionRepositories {
     }
 
     @Override
-    public boolean removePosition(String position) {
+    public boolean removePosition(String position) {    //delete position from db
         Connection connection = null;
         try {
             connection = dbManager.getConnection();

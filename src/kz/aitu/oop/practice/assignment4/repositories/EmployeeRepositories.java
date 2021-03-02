@@ -19,7 +19,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
 
 
     @Override
-    public ArrayList<Employee> showAllEmployee() {
+    public ArrayList<Employee> showAllEmployee() {   //show all table of employee
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
@@ -51,7 +51,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
-    public ArrayList<Employee> searchEmployeeByName(String name) {
+    public ArrayList<Employee> searchEmployeeByName(String name) {     //search employee by name
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
@@ -84,7 +84,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
-    public Employee getEmployeeById(int id) {
+    public Employee getEmployeeById(int id) {   //search/get employee by id
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
@@ -116,7 +116,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
-    public boolean removeEmployeeById(int id) {
+    public boolean removeEmployeeById(int id) {  //delete employee from db by id
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
@@ -133,7 +133,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
-    public boolean addNewEmployee(Employee employee) {
+    public boolean addNewEmployee(Employee employee) {  //add new employee to db
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
@@ -157,7 +157,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
-    public int showSumOfAllSalary() {
+    public int showSumOfAllSalary() {   //to search total cost of project I just sum all employee salary
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
