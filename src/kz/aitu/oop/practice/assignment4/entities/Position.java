@@ -30,9 +30,7 @@ public class Position {
 
     @Override
     public String toString() {
-        return "Position{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                '}';
+        return "name = " + name + " | " +
+                "salary = " + salary + "\n";
     }
 }
